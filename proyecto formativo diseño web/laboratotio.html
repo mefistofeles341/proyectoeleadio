@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio</title>
+    <style>
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+      
+        header {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid #444444;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Menú de navegación */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #444444;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #b0b0b0;
+            transform: translateY(-2px);
+        }
+
+        /* Estilo para las secciones */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            margin: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #666666;
+            margin-bottom: 30px;
+        }
+
+        .btn-return {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #555555;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-return:hover {
+            background-color: #333333;
+            transform: scale(1.05);
+        }
+
+    
+        #carousel {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        marquee img {
+            max-width: 200px;
+            margin: 0 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444444;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav>
+        <a href="#top">Inicio</a>
+        <a href="#section1">Sección 1</a>
+        <a href="#section2">Sección 2</a>
+        <a href="index.html">Regresar a la página principal</a>
+    </nav>
+
+  
+    <header id="top">
+        <h1>Laboratorio</h1>
+        <img src="LAB LOGO.jpg" alt="Imagen de laboratorio">
+    </header>
+
+    
+    <section id="section1">
+        <h2>ANÁLISIS DE LABORATORIO: EXÁMENES CLÍNICOS: CONSULTAS ESPECIALIZADAS</h2>
+        <p>RESULTADOS CON PRECISIÓN Y CONFIANZA</p>
+        <div id="carousel">
+            <marquee behavior="scroll" direction="left" scrollamount="10">
+                <img src="LAB1.jfif" alt="Análisis 1">
+                <img src="LAB2.jfif" alt="Análisis 2">
+                <img src="LAB3.jfif" alt="Análisis 3">
+                <img src="LAB4.jfif" alt="Análisis 4">
+            </marquee>
+        </div>
+        <a href="#top" class="btn-return">Volver al menú principal</a>
+    </section>
+
+
+<section id="section2">
+    <h2>LISTAS Y HORARIOS DE ATENCIÓN DIARIOS DE EXÁMENES:</h2>
+    <p>DRA. LABORATORIASTA CLAUDIA CORDOBA</p>
+
+    
+    <div style="border: 2px solid #444444; padding: 20px; margin: 20px 0; border-radius: 10px; background-color: #f4f4f4; max-width: 100%; width: 900px;">
+        <h3>Horarios y Exámenes</h3>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThO9jXM6HuqWxQD65BSIFwDseKtk-L8Nn7HaFiIIPzScYo3OjXAoO-EpK7oDPph3659cEGs_0M_s1L/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="300px" frameborder="0"></iframe>
+    </div>
+
+    <a href="#top" class="btn-return">Volver al menú principal</a>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Laboratorio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
